@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+  position: relative;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*--------------- HEADER ---------------*/
+
+header {
+  background: #24292e;
+  padding: 13px 35px;
+  color: white;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.logo i {
+  font-size: 35px;
+  color: white;
+}
+
+.burger-content {
+  display: flex;
+  align-items: center;
+}
+
+#header-search {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  border: 1px solid #444d56;
+  background: transparent;
+  border-radius: 5px;
+  width: 250px;
+}
+
+#header-search input {
+  width: 200px;
+  padding: 5px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  background: transparent;
+  font-size: 15px;
+  color: #fff;
+  width: 100%;
+  outline: none;
+}
+
+#header-search .edit {
+  border: 1px solid #444d56;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background: transparent;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.info img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header-links {
+  display: flex;
+}
+
+.header-links li {
+  padding: 0 8px;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.header-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --------------- END*/
+
+#repository {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* --------------- ASIDE --------------- */
+
+aside#repo-author {
+  padding: 15px 30px 15px 0;
+  max-width: 300px;
+}
+
+.client-avatar img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.client-name {
+  padding: 10px 0 13px;
+}
+
+.client-name h2 {
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #23272b;
+  margin-bottom: 7px;
+}
+
+.client-name p {
+  color: #586069;
+  font-size: 20px;
+}
+
+.client-description {
+  max-width: 250px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* --------------- END*/
+
+/* --------------- CONTENT --------------- */
+
+section#repo-content {
+  flex: 2;
+}
+
+.top {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.top a:nth-child(2) {
+  border-bottom: 2px solid #f9826c;
+  font-weight: 600;
+}
+
+.top a {
+  padding: 8px 16px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #24292e;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fff;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+
+.top a:hover {
+  border-bottom: 2px solid #dadcdd;
+}
+
+.top i {
+  padding-right: 7px;
+  color: #e0e0e1;
+}
+
+.badge {
+  background: #dadcdd;
+  border-radius: 30px;
+  padding: 5px;
+  margin-left: 7px;
+}
+
+#repo-search input {
+  width: 90%;
+  padding: 7px 0 10px 7px;
+  border: 1px solid #dadcdd;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.search-result {
+  display: inline-block;
+  padding: 10px 0;
+  border-bottom: 1px solid #dadcdd;
+  font-style: italic;
+}
+
+div.client-repo {
+  padding: 20px 0;
+}
+
+.card {
+  width: 93%;
+  padding: 20px 0 25px 0;
+  border-bottom: 1px solid #dadcdd;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card h3 {
+  color: #0366d6;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  display: inline-block;
+  padding-right: 10px;
+  color: #586069;
+}
+
+.color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.card button {
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 20px;
+  border: 1px solid #dadcdd;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.card button:hover {
+  background: #f2f2f2;
+}
+
+.inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* --------------- END*/
+
+@media (max-width: 790px) {
+  header {
+    padding: 13px;
+    margin-bottom: 0;
+  }
+  .masthead {
+    justify-content: space-between;
+    width: 50%;
+  }
+  .burger-menu {
+    display: block;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 3px;
+    background: transparent;
+  }
+
+  .burger-menu img {
+    width: 25px;
+    cursor: pointer;
+  }
+
+  .burger-menu i:hover {
+    color: #dadcdd;
+  }
+
+  .burger-content {
+    align-items: flex-start;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 100%;
+    background: #24292e;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .content-active {
+    height: 70vh;
+    overflow: none;
+  }
+
+  #header-search {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .none {
+    display: block;
+  }
+
+  .info .hide {
+    display: none;
+  }
+
+  .header-links {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header-links li {
+    padding: 10px 0;
+    border-top: 1px solid #444d56;
+  }
+
+  .header-avatar {
+    display: flex;
+  }
+
+  .header img {
+    display: flex;
+  }
+
+  .header-img img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  .last {
+    display: flex;
+  }
+
+  .fa-sign-out-alt {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+
+  main#repository {
+    flex-direction: column;
+  }
+
+  aside#repo-author {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .client-avatar {
+    width: 100px;
+  }
+
+  .client-avatar img {
+    width: 100%;
+  }
+
+  .client-avatar img,
+  .client-avatar .login {
+    position: sticky;
+    top: 0;
+  }
+
+  .client-info {
+    display: flex;
+  }
+
+  .client-description {
+    max-width: 90%;
+  }
+
+  .top {
+    margin-top: 30px;
+    overflow-x: scroll;
+  }
+
+  #repo-search input {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 567px) {
+  #header-search {
+    position: absolute;
+    top: 9%;
+    z-index: 3;
+    left: 0;
+    width: 100%;
+  }
+}
